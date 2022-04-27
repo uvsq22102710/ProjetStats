@@ -10,7 +10,7 @@ liste_Y = []
 
 def cree_fichier_alea(nb, nomfichier):
     t = nb
-    global t
+    global t 
     nomfichier = open("fichier de texte", "w")
     for i in range(nb):
         for j in range(2):
@@ -22,7 +22,7 @@ def cree_fichier_alea(nb, nomfichier):
 def lit_fichier(nomfic):
     global liste_X,liste_Y
     liste = []
-    nomfic = open(nomfic,'r')
+    nomfic = open(nomfic,'r')  # c'est open("fichier de texte","r")
     while True:
         texte = nomfic.readline()
         liste.append(texte.split())
