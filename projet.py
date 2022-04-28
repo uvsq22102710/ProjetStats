@@ -7,8 +7,11 @@ WIDTH = 500
 liste_X = []
 liste_Y = []
 
+#nb= 8
+
 
 def cree_fichier_alea(nb, nomfichier):
+<<<<<<< HEAD
     t = nb
     global t 
     nomfichier = open("fichier de texte", "w")
@@ -54,6 +57,25 @@ cv = tk.Canvas(racine, height=HEIGHT, width=WIDTH)
 
 
 
+=======
+    nomfichier = open("fichier de texte","w")
+    for i in range(2):
+        temp = str(rd.uniform(0, 500))
+        nomfichier.write(temp, " ")
+    nomfichier.write("\n")
+    nomfichier.close()
+
+
+def lit_fichier(nomfic):
+    liste1 =[]
+    liste2 =[]
+    nomfichier = open("fichier de texte", "r")
+    line = nomfichier.readline()
+    val = line.split()
+    for i  in line:
+        for i in val:
+            liste1.append(val[0])
+>>>>>>> d755e73af4aaac9828ba0cdf0d592daf0f3dfbd9
 
 
 
