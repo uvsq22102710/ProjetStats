@@ -74,6 +74,7 @@ def moyenne(serie):     #serie correspond à une liste, soit celle des X soit ce
 
 
 def variance(serie):
+    """commentaire à faire"""
     moyenne(serie)
     res = moyenne(serie)  #ou res = moyen mais ca marche et j'ai pris sur le net
     som = 0
@@ -84,6 +85,7 @@ def variance(serie):
 
 
 def covariance(serieX, serieY):
+    """commentaire à faire"""
     #moyenne(serie)
     res1 = moyenne(serieX)  # à comprendre
     res2 = moyenne(serieY)  # à comprendre
@@ -95,6 +97,7 @@ def covariance(serieX, serieY):
     
 
 def correlation(serieX, serieY):
+    """commentaire à faire"""
     #variance(serie)
     covariance(serieX, serieY)
     result = covariance(serieX, serieY)
@@ -105,6 +108,12 @@ def correlation(serieX, serieY):
 
 
 def forte_correlation(serieX, serieY):
+    """commentaire à faire"""
+    pass
+
+
+def droite_reg(serieX, serieY):
+    """commentaire à faire"""
     pass
 
 
