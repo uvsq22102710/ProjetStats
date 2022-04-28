@@ -17,7 +17,7 @@ fichier = open (nomfichier,"w")
 # constantes
 
 #nombre de ligne du fichier
-nb = 8
+nb = 10
 #liste
 liste1 = []
 liste2 = []
@@ -30,7 +30,7 @@ liste2 = []
 
 def cree_fichier_alea(nb, nomfichier):
     """commentaire à faire"""
-    fichier = open(nomfichier,"w")
+    fichier = open(nomfichier,"w")   #cette fois ci le 1er fichier crée sera ecraser et remplacer par celui là
     for i in range (1, nb+1):
         for i in range(2):
             temp = str(rd.uniform(0, 500))  #quel est la difference avec randint
